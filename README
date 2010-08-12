@@ -1,3 +1,7 @@
 
 to install:
 cp dot.vimrc ~/.vimrc
+
+
+check this repo for ideas
+git://github.com/twerth/dotfiles.git
