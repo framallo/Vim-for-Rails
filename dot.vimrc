@@ -16,4 +16,7 @@ func GitGrep(...)
 endfun
 command -nargs=? G call GitGrep(<f-args>)
 
+" color scheme of the moment:
+syntax on
+colorscheme ir_black
 
