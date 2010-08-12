@@ -1,8 +1,8 @@
 
 to install:
 
-ln -s dot.vimrc ~/.vimrc
-ln -s dot.gvimrc ~/.gvimrc
+ln -s vimrc ~/.vimrc
+ln -s gvimrc ~/.gvimrc
 
 
 check this repo for ideas
