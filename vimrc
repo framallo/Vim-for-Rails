@@ -283,7 +283,20 @@ map <Leader>rs :RS<CR>
 "
 " color scheme of the moment:
 syntax on
-colorscheme ir_black
+
+if has("gui_macvim")
+  colorscheme ir_black
+elseif has("gui_gtk2")
+  colorscheme ir_black
+elseif has("x11")
+elseif has("gui_win32")
+else
+	" Select colormap: 'soft', 'softlight', 'standard' or 'allblue'
+	let xterm16_colormap	= 'allblue'
+	" Select brightness: 'low', 'med', 'high', 'default' or custom levels.
+	let xterm16_brightness	= 'default'
+	colo xterm16
+end
 
 
 
