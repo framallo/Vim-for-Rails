@@ -110,11 +110,11 @@ set linebreak  " Wrap at word
 
 " Directories *****************************************************************
 " Setup backup location and enable
-"set backupdir=~/backup/vim
+set backupdir=~/.vim/tmp/backup
 "set backup
 
 " Set Swap directory
-"set directory=~/backup/vim/swap
+set directory=~/.vim/tmp/swap
 
 " Sets path to directory buffer was loaded from
 "autocmd BufEnter * lcd %:p:h
