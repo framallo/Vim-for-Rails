@@ -15,6 +15,7 @@ if has("gui_macvim")
   set guifont=Monaco:h11
   set guioptions-=T  " remove toolbar
   set stal=2 " turn on tabs by default
+  set guioptions+=c " remove mac dialogs or Ctrl+F7 toggles keyboard dialog navigation
 elseif has("gui_gtk2")
   set guifont=Monaco
   set guioptions-=T  " remove toolbar
