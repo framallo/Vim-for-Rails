@@ -3,3 +3,4 @@ tmp/backup/*
 doc/tags
 .VimballRecord
 .netrwhist
+.DS_Store
