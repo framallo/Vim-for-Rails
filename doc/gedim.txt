@@ -1,0 +1,101 @@
+*gedim.vim*	Graphical EDitor DIMensions auto-resizing
+
+This is a MacVim and gVim ONLY script.
+
+Customize the columns and rows (editor dimensions) when Vim starts in
+different devices with different resolutions.  Useful when the screen
+resolution changes between a portable's built-in screen and one or more
+external monitors.  It helps the user from having to resize the editor
+manually, having to set the columns and lines explicitly, or from
+having to update $HOME/.gvimrc when the output device changes.
+
+Contents:
+
+1. Features		|gedim-features|
+2. Requirements		|gedim-requirements|
+3. Usage		|gedim-usage|
+4. Configuration	|gedim-configuration|
+5. About		|gedim-about|
+
+
+*gedim-features*
+
+* User configurable:  add as many output device resolutions and
+  editor sizes as desired or needed
+* MacVim and gVim compatible
+* Works on OS X, Linux/Gnome, Linux/KDE, and Windows
+* Unobtrusive; set it up once and forget all about it
+
+
+*gedim-requirements*
+
+Easy!  MacVim or gVim 7.0.1 or later.  Check with: >
+
+  :echo version
+
+to see if this will work.  It *may* work with earlier versions but
+it wasn't tested.
+
+The code was tested on 7.0.1 and 7.0.2.
+
+The script calls these commands based on the environment where it runs:
+
+OS X:		/usr/sbin/system_profiler
+Linux:		/usr/bin/xrandr
+Windows:	wmic.exe
+
+
+*gedim-usage*
+
+Install gedim.vim to the appropriate default Vim scripts directory for your
+configuration, normally $HOME/.vim/plugin, then customize the colums, lines
+that you'd like for each screen resolution that you're likely to use by
+setting up the global dictionary g:screenDimensions in your .vimrc or .gvimrc
+files.  The editor will always open at the appropriate size for any given
+resolution that you specify.
+
+
+*gedim-configuration*
+
+1. Save the script to $HOME/.vim/plugins/gedim.vim
+2. Set the g:screenDimensions dictionary with your screen preferences in
+   .vimrc or in .gvimrc
+3. Start MacVim or gVim
+
+Set default values to your liking in g:screenDimension.  The key is the screen resolution
+that the system reports.  The value is the [columns, lines] to which
+you'd like to set MacVim.
+
+NOTICE:  You MUST set these values to the ones that you like/want!  These
+are set up for the author's personal configuration.
+
+Here is a common user who alternates between using a MacBook Pro 15"
+built-in screen and an external 24" monitor: >
+
+  :let g:screenDimensions = { '1920,1080': [ 304, 80 ], '1440,900': [ 224, 60 ] }
+
+If g:screenDimensions doesn't exist, or your current screen resolution isn't
+defined in the dictionary, the default editor dimentions will be 128@40.
+
+Note:  ATTENTION WINDOWS USERS! 
+The command that we use for figuring out the screen resolution may
+return width, height or height, width because it likes sorting the
+list before handing it back.  If you set your screenDimensions and 
+it doesn't set the editor to the appropriate value, run this: >
+
+  :echo g:rezWindows
+
+That will tell you the key that you need to use in the screenDimensions
+dictionary, as resolved by the script.
+
+
+*gedim-about*
+
+Eugene Ciurana, http://eugeneciurana.com/contact or http://ciurana.eu/contact
+for your questions.
+
+Project page:  http://eugeneciurana.com/gedim.vim
+
+For interactive discussions, find me as pr3d4t0r at
+irc://irc.freenode.net #python, ##java, #awk, #security, etc.
+
