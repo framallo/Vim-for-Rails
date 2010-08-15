@@ -59,7 +59,7 @@ function! GEditorDimensions()
   " The best places to set these up is in .vimrc or .gvimrc - thanks!
 
   if !exists("g:screenDimensions")
-    let g:screenDimensions = { '1920,1080': [ 200, 40 ], '1440,900': [ 160, 24 ] }
+    let g:screenDimensions = { '1920,1080': [ 200, 40 ], '1440,900': [ 160, 24 ], 'default' :[128,40] }
   endif
 
   " Identify host OS and GUI and set executable, resolution:
@@ -89,6 +89,9 @@ function! GEditorDimensions()
     if has_key(g:screenDimensions, rez)
       let nColumns = g:screenDimensions[rez][0]
       let nLines   = g:screenDimensions[rez][1]
+    else
+      let nColumns = g:screenDimensions['default'][0]
+      let nLines   = g:screenDimensions['default'][1]
     endif
 
     let &columns=nColumns
