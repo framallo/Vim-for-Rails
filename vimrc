@@ -9,6 +9,7 @@
 " |   ,f = fuzzy find all files                                               |
 " |   ,b = fuzzy find in all buffers                                          |
 " |   ,p = go to previous file                                                |
+" |   ,t = toogle taglist                                                     |
 " |                                                                           |
 " |   hh = inserts '=>'                                                       |
 " |   aa = inserts '@'                                                        |
@@ -247,9 +248,12 @@ let g:AutoComplPop_IgnoreCaseOption = 0
 let g:AutoComplPop_BehaviorKeywordLength = 2
 
 
-" railsvim ***************************************************************
+" railsvim *******************************************************************
 map <Leader>ra :AS<CR>
 map <Leader>rs :RS<CR>
+
+" taglist ********************************************************************
+nnoremap <silent> <Leader>t :TlistToggle<CR>
 
 
 " -----------------------------------------------------------------------------  
