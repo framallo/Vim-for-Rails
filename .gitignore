@@ -1,0 +1,5 @@
+tmp/swap/*
+tmp/backup/*
+doc/tags
+.VimballRecord
+.netrwhist
