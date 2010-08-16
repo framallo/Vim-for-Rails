@@ -28,6 +28,19 @@
 " SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
 "
+" Usage: 
+" add the following line to your .gvimrc or .vimrc file 
+" and change it based on your screen size
+"
+" let g:screenDimensions = { '1920,1080': [ 304, 80 ], '1280,800': [ 120, 50 ], 'default' :[50,50] }
+"
+" Screen Resolutions Reference:
+"
+"  MacbookPro 17" 1920x1200:[180,65]
+"  MacBookPro 15" 1440x900:[160,55]
+"  MacBookPro 13" 1280x800:[120,50]
+"
+"
 " CONTRIBUTOR           EMAIL                         IRC /NICK
 " ----------            -----                         ---------
 " Eugene Ciurana        http://ciurana.eu/contact     pr3d4t0r
@@ -44,11 +57,6 @@
 " 20100813              1.1b Fixed Windows detection bug based on EOL (\r\n) - by Nathan Tenney
 
 function! GEditorDimensions()
-  " Set nColumns, nRows to some reasonable default for your screen.
-
-  let nColumns = 128
-  let nLines   = 40
-
   " Set default values to your liking here.  The key is the screen resolution
   " that the systemProfiler reports.  The value is the [columns, lines] to which
   " you'd like to set MacVim.
@@ -57,7 +65,6 @@ function! GEditorDimensions()
   " are set up for the author's personal configuration as an example.
   "
   " The best places to set these up is in .vimrc or .gvimrc - thanks!
-
   if !exists("g:screenDimensions")
     let g:screenDimensions = { '1920,1080': [ 200, 40 ], '1440,900': [ 160, 24 ], 'default' :[128,40] }
   endif
@@ -89,9 +96,14 @@ function! GEditorDimensions()
     if has_key(g:screenDimensions, rez)
       let nColumns = g:screenDimensions[rez][0]
       let nLines   = g:screenDimensions[rez][1]
-    else
+    elseif has_key(g:screenDimensions, 'default')
+      " use default values from user
       let nColumns = g:screenDimensions['default'][0]
       let nLines   = g:screenDimensions['default'][1]
+    else
+      " fallback default for your screen.
+      let nColumns = 128
+      let nLines = 40
     endif
 
     let &columns=nColumns
@@ -100,4 +112,7 @@ function! GEditorDimensions()
 endfunction
 
 autocmd GUIEnter * call GEditorDimensions()
+
+
+
 
