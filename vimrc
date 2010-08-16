@@ -256,6 +256,15 @@ map <Leader>rs :RS<CR>
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 
 
+" fugitive ********************************************************************
+map <Leader>ggs :Gstatus<CR>
+map <Leader>ggc :Gcommit<CR>
+map <Leader>ggb :Gblame<CR>
+"add the current file to commit
+map <Leader>gga :Gwrite<CR>
+map <Leader>ggd :Gdiff<CR>
+
+
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
 " |                      (GUI stuff goes in gvimrc)                           |
