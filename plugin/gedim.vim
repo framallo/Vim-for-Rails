@@ -36,9 +36,9 @@
 "
 " Screen Resolutions Reference:
 "
-"  MacbookPro 17" 1920x1200:[180,65]
-"  MacBookPro 15" 1440x900:[160,55]
-"  MacBookPro 13" 1280x800:[120,50]
+"  MacbookPro 17" '1920x1200':[180,65]
+"  MacBookPro 15" '1440x900':[160,55]
+"  MacBookPro 13" '1280x800':[120,50]
 "
 "
 " CONTRIBUTOR           EMAIL                         IRC /NICK
