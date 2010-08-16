@@ -255,6 +255,9 @@ map <Leader>rs :RS<CR>
 " taglist ********************************************************************
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 
+" utl ************************************************************************
+let g:utl_cfg_hdl_scm_http_system = "!open '%u#%f'"
+let g:utl_cfg_hdl_scm_http = "!open '%u#%f'"
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
