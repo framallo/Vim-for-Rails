@@ -1,5 +1,4 @@
-The awesome Vim config files
-============================
+h1. The awesome Vim config files
 
 This will allow you to run mac vim and develop on Ruby on Rails.
 
@@ -21,8 +20,7 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 user settings can go in ~/.vimrc.local 
 
 
-USAGE
-=====
+h1. USAGE
 
 jj = <esc>  Very useful for keeping your hands on the home row          
 ,n = toggle NERDTree off and on                                         
@@ -45,23 +43,21 @@ enter and shift-enter = adds a new line after/before the current line
 :call Tabstyle_tabs = set tab to real tabs                              
 :call Tabstyle_spaces = set tab to 2 spaces                             
 
-Keyboard Layout
-===============
+h1. Keyboard Layout
 
 I use english keyboard layout since is the most efficient layout for development.
 Also I use the Caps Lock key as control key. 
 
 
-Wish List
-=========
+h1. Wish List
+
 Things i want to include, build, improve, etc
 
 * Git grep inside vim 
 * mvim should open a new tab and pwd should be set to the current file
 * running 'mvim' or 'mvim .' should open the NERDTREE by default and an empty window on the right
 
-Thanks
-======
+h1. Thanks
 
 Thanks to twerth for his config files 
 Thanks to Rafa for introducing me to the world of mac! 
