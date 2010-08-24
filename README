@@ -1,10 +1,64 @@
 The awesome Vim config files
+============================
 
-This will allow you to run mac vim and develop on Ruby on Rails
+This will allow you to run mac vim and develop on Ruby on Rails.
 
+Some features include:
+* nice theme for gui and terminal with 16 colors. (ir_black and xterm16)
+* incremental Search that ignore case by default
+* Swap and backup out of your way
 
 to install:
+
+git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
+user settings can go in ~/.vimrc.local 
+
+
+USAGE
+=====
+
+jj = <esc>  Very useful for keeping your hands on the home row          
+,n = toggle NERDTree off and on                                         
+,f = fuzzy find all files                                               
+,F = Fuzzy find flush (refresh when new files are created)
+,b = fuzzy find in all buffers                                          
+,p = go to previous file                                                
+,t = toogle taglist                                                     
+                                                                        
+hh = inserts '=>'                                                       
+aa = inserts '@'                                                        
+                                                                        
+,h = new horizontal window                                              
+,v = new vertical window                                                
+                                                                        
+,i = toggle invisibles                                                  
+                                                                        
+enter and shift-enter = adds a new line after/before the current line   
+                                                                        
+:call Tabstyle_tabs = set tab to real tabs                              
+:call Tabstyle_spaces = set tab to 2 spaces                             
+
+Keyboard Layout
+===============
+
+I use english keyboard layout since is the most efficient layout for development.
+Also I use the Caps Lock key as control key. 
+
+
+Wish List
+=========
+Things i want to include, build, improve, etc
+
+* Git grep inside vim 
+* mvim should open a new tab and pwd should be set to the current file
+* running 'mvim' or 'mvim .' should open the NERDTREE by default and an empty window on the right
+
+Thanks
+======
+
+Thanks to twerth for his config files 
+Thanks to Rafa for introducing me to the world of mac! 
