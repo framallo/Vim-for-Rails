@@ -9,6 +9,9 @@ Some features include:
 * Swap and backup out of your way
 
 to install:
+you need to install macvim with ruby support
+
+sudo port install macvim + ruby
 
 git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
