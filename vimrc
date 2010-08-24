@@ -231,6 +231,7 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
   " make
 let g:CommandTMatchWindowAtTop = 1
 map <Leader>f :CommandT<CR>
+map <Leader>F :CommandTFlush<CR>
 
 
 " fuzzyfinder ********************************************************
