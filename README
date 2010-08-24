@@ -1,9 +1,10 @@
+The awesome Vim config files
+
+This will allow you to run mac vim and develop on Ruby on Rails
+
 
 to install:
 
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
-
-check this repo for ideas
-git://github.com/twerth/dotfiles.git
