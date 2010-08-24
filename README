@@ -11,7 +11,7 @@ Some features include:
 to install:
 you need to install macvim with ruby support
 
-sudo port install macvim + ruby
+sudo port install macvim +ruby
 
 git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
