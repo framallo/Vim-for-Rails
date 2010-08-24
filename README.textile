@@ -8,9 +8,13 @@ Some features include:
 * Swap and backup out of your way
 
 to install:
-you need to install macvim with ruby support
-
+you need to install macvim. If you are using OSX with macports you can run:
 sudo port install macvim +ruby
+
+WARNING: The +ruby variant depends on ruby from macport! this could reinstall a new ruby env!
+You only require ruby support for command-t plugin. So you could remove +ruby to install it without ruby support:
+
+then add the config files:
 
 git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
@@ -67,4 +71,5 @@ h1. See it
 h1. Thanks
 
 Thanks to twerth for his config files 
-Thanks to Rafa for introducing me to the world of mac! 
+Thanks to Rafa for introducing me to the world of mac and spending some time testing this config! :D
+
