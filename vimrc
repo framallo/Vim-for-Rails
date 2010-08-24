@@ -7,6 +7,7 @@
 " |   ,n = toggle NERDTree off and on                                         |
 " |                                                                           |
 " |   ,f = fuzzy find all files                                               |
+" |   ,F = Fuzzy find flush (refresh when new files are created)              |
 " |   ,b = fuzzy find in all buffers                                          |
 " |   ,p = go to previous file                                                |
 " |   ,t = toogle taglist                                                     |
