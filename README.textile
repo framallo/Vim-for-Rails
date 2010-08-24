@@ -57,6 +57,13 @@ Things i want to include, build, improve, etc
 * mvim should open a new tab and pwd should be set to the current file
 * running 'mvim' or 'mvim .' should open the NERDTREE by default and an empty window on the right
 
+
+h1. See it
+
+!http://s3.amazonaws.com/tangosource_pm/100824164544/100824164544_Screen_shot_2010-08-24_at_11.36.20_AM.png!
+
+
+
 h1. Thanks
 
 Thanks to twerth for his config files 
