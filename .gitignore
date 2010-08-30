@@ -4,3 +4,5 @@ doc/tags
 .VimballRecord
 .netrwhist
 .DS_Store
+ruby/command-t/Makefile
+ruby/command-t/mkmf.log
