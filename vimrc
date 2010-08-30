@@ -5,6 +5,7 @@
 " | Some highlights:                                                          |
 " |   jj = <esc>  Very useful for keeping your hands on the home row          |
 " |   ,n = toggle NERDTree off and on                                         |
+" |   ,N = find current file in  NERDTree                                     |
 " |                                                                           |
 " |   ,f = fuzzy find all files                                               |
 " |   ,F = Fuzzy find flush (refresh when new files are created)              |
@@ -203,6 +204,7 @@ imap aa @
 
 " NERDTree ********************************************************************
 :noremap <Leader>n :NERDTreeToggle<CR>
+:noremap <Leader>N :NERDTreeFind<CR>
 let NERDTreeHijackNetrw=1 " User instead of Netrw when doing an edit /foobar
 let NERDTreeMouseMode=1 " Single click for everything
 
