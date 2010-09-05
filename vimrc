@@ -273,6 +273,8 @@ map <Leader>ggb :Gblame<CR>
 map <Leader>gga :Gwrite<CR>
 map <Leader>ggd :Gdiff<CR>
 
+" viki ************************************************************************
+au BufRead,BufNewFile *.viki set ft=viki 
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
