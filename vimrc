@@ -105,6 +105,10 @@ set ruler " Show ruler
 "set ch=2 " Make command line two lines high
 match LongLineWarning '\%120v.*' " Error format when a line is longer than 120
 
+" filename completition *******************************************************
+" works as bash completition
+set wildmode=longest:full
+set wildmenu
 
 " Line Wrapping ***************************************************************
 set nowrap
