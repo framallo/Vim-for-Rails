@@ -76,8 +76,8 @@ set equalalways " Multiple windows, when created, are equal in size
 set splitbelow splitright
 
 " Vertical and horizontal split then hop to a new buffer
-:noremap <Leader>v :vsp^M^W^W<cr>
-:noremap <Leader>h :split^M^W^W<cr>
+":noremap <Leader>v :vsp^M^W^W<cr>
+":noremap <Leader>h :split^M^W^W<cr>
 
 
 " Cursor highlights ***********************************************************
@@ -275,6 +275,8 @@ map <Leader>ggd :Gdiff<CR>
 
 " viki ************************************************************************
 au BufRead,BufNewFile *.viki set ft=viki 
+let g:vikiNameSuffix=".viki"
+autocmd! BufRead,BufNewFile *.viki set filetype=viki
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
