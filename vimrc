@@ -202,6 +202,9 @@ imap uu _
 imap hh =>
 imap aa @
 
+" mkdir on edit if needed*******************************************************
+" http://vim.wikia.com/wiki/Mkdir_on_edit_if_needed
+au BufNewFile * :exe ': !mkdir -p ' . escape(fnamemodify(bufname('%'),':p:h'),'#% \\')
 
 " -----------------------------------------------------------------------------  
 " |                              Plug-ins                                     |
