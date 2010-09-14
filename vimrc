@@ -198,9 +198,9 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
 
 " Hard to type *****************************************************************
-imap uu _
-imap hh =>
-imap aa @
+"imap uu _
+"imap hh =>
+"imap aa @
 
 " mkdir on edit if needed*******************************************************
 " http://vim.wikia.com/wiki/Mkdir_on_edit_if_needed
