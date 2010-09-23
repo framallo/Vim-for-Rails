@@ -209,7 +209,7 @@ imap aa @
 " NERDTree ********************************************************************
 :noremap <Leader>n :NERDTreeToggle<CR>
 :noremap <Leader>N :NERDTreeFind<CR>
-let NERDTreeHijackNetrw=1 " User instead of Netrw when doing an edit /foobar
+let NERDTreeHijackNetrw=0 " User instead of Netrw when doing an edit /foobar
 let NERDTreeMouseMode=1 " Single click for everything
 
 
