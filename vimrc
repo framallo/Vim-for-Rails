@@ -277,9 +277,13 @@ map <Leader>gga :Gwrite<CR>
 map <Leader>ggd :Gdiff<CR>
 
 " viki ************************************************************************
-au BufRead,BufNewFile *.viki set ft=viki 
-let g:vikiNameSuffix=".viki"
-autocmd! BufRead,BufNewFile *.viki set filetype=viki
+let g:vikiUseParentSuffix = 1
+if !exists('g:viki_intervikis')
+    let g:viki_intervikis = {}   "{{{2
+endif
+let g:viki_intervikis['WIKI'] = $HOME."/wiki"
+let g:vikiNameSuffix=".textile"
+autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
