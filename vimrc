@@ -164,6 +164,8 @@ set matchpairs+=<:>
 set vb t_vb= " Turn off bell, this could be more annoying, but I'm not sure how
 set nofoldenable " Turn off folding 
 
+" History *********************************************************************
+set history=1000 " increase history size
 
 " Navigation ******************************************************************
 
