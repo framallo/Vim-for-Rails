@@ -285,6 +285,10 @@ let g:viki_intervikis['WIKI'] = $HOME."/wiki"
 let g:vikiNameSuffix=".textile"
 autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki
 
+
+" agtd and viki ***************************************************************
+autocmd! BufRead,BufNewFile $HOME/wiki/todo.textile set filetype=agtd | VikiMinorMode
+
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
 " |                      (GUI stuff goes in gvimrc)                           |
