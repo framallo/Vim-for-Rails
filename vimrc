@@ -290,6 +290,9 @@ let g:vimwiki_browsers=['open ']
 function! VimwikiWeblinkHandler(weblink)
   silent execute '!open ' . a:weblink
 endfunction
+let g:vimwiki_folding=1
+let g:vimwiki_fold_lists=1
+
 
 " agtd and viki ***************************************************************
 autocmd! BufRead,BufNewFile $HOME/wiki/todo.textile set filetype=agtd | VikiMinorMode
