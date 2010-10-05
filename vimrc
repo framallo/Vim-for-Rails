@@ -286,6 +286,10 @@ let g:vikiNameSuffix=".textile"
 let g:vikiHide='update'
 autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki | set wrap | set tw=80 | set columns=90
 
+let g:vimwiki_browsers=['open ']
+function! VimwikiWeblinkHandler(weblink)
+  silent execute '!open ' . a:weblink
+endfunction
 
 " agtd and viki ***************************************************************
 autocmd! BufRead,BufNewFile $HOME/wiki/todo.textile set filetype=agtd | VikiMinorMode
