@@ -281,9 +281,10 @@ let g:vikiUseParentSuffix = 1
 if !exists('g:viki_intervikis')
     let g:viki_intervikis = {}   "{{{2
 endif
-let g:viki_intervikis['WIKI'] = $HOME."/wiki"
+let g:viki_intervikis['WIKI'] = $HOME."/wiki/Home.textile"
 let g:vikiNameSuffix=".textile"
-autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki
+let g:vikiHide='update'
+autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki | set wrap | set tw=80 | set columns=90
 
 
 " agtd and viki ***************************************************************
