@@ -276,16 +276,7 @@ map <Leader>ggb :Gblame<CR>
 map <Leader>gga :Gwrite<CR>
 map <Leader>ggd :Gdiff<CR>
 
-" viki ************************************************************************
-let g:vikiUseParentSuffix = 1
-if !exists('g:viki_intervikis')
-    let g:viki_intervikis = {}   "{{{2
-endif
-let g:viki_intervikis['WIKI'] = $HOME."/wiki/Home.textile"
-let g:vikiNameSuffix=".textile"
-let g:vikiHide='update'
-autocmd! BufRead,BufNewFile $HOME/wiki/* set filetype=viki | set wrap | set tw=80 | set columns=90
-
+" vimwiki ************************************************************************
 let g:vimwiki_browsers=['open ']
 function! VimwikiWeblinkHandler(weblink)
   silent execute '!open ' . a:weblink
