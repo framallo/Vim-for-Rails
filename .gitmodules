@@ -43,3 +43,6 @@
 [submodule "bundle/ruby"]
 	path = bundle/ruby
 	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = http://github.com/vim-scripts/L9.git
