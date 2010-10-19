@@ -34,6 +34,9 @@ set nocompatible
 let mapleader = ","
 imap jj <Esc> " Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees
 
+" load plugins on bundle folder ********************************************************
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Tabs ************************************************************************
 "set sta " a <Tab> in an indent inserts 'shiftwidth' spaces

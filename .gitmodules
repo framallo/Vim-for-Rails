@@ -1,0 +1,45 @@
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = http://github.com/mileszs/ack.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
+[submodule "bundle/fuzzyfinder"]
+	path = bundle/fuzzyfinder
+	url = http://github.com/clones/vim-fuzzyfinder.git
+[submodule "bundle/gedim"]
+	path = bundle/gedim
+	url = http://github.com/vim-scripts/gedim.git
+[submodule "bundle/nerd-commenter"]
+	path = bundle/nerd-commenter
+	url = http://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/nerd-tree"]
+	path = bundle/nerd-tree
+	url = http://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "bundle/SearchComplete"]
+	path = bundle/SearchComplete
+	url = http://github.com/vim-scripts/SearchComplete.git
+[submodule "bundle/ShowMarks"]
+	path = bundle/ShowMarks
+	url = http://github.com/vim-scripts/ShowMarks.git
+[submodule "bundle/ReloadScript"]
+	path = bundle/ReloadScript
+	url = http://github.com/vim-scripts/ReloadScript.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/eruby"]
+	path = bundle/eruby
+	url = http://github.com/vim-scripts/eruby.vim.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = http://github.com/tpope/vim-haml.git
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = http://github.com/vim-ruby/vim-ruby.git
