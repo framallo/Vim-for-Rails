@@ -46,3 +46,6 @@
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = http://github.com/vim-scripts/L9.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = http://github.com/vim-scripts/vimwiki.git

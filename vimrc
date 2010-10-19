@@ -276,6 +276,13 @@ map <Leader>ggb :Gblame<CR>
 map <Leader>gga :Gwrite<CR>
 map <Leader>ggd :Gdiff<CR>
 
+" vimwiki ************************************************************************
+let g:vimwiki_browsers=['open ']
+function! VimwikiWeblinkHandler(weblink)
+  silent execute '!open ' . a:weblink
+endfunction
+let g:vimwiki_folding=1
+let g:vimwiki_fold_lists=1
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
