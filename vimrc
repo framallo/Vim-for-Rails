@@ -284,6 +284,10 @@ endfunction
 let g:vimwiki_folding=1
 let g:vimwiki_fold_lists=1
 
+" nginx conf *********************************************************************
+au BufRead,BufNewFile nginx.conf* set ft=nginx
+
+
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
 " |                      (GUI stuff goes in gvimrc)                           |
