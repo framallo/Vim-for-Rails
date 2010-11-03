@@ -187,6 +187,7 @@ map <Leader>p <C-^> " Go to previous file
 "compiler ruby         " Enable compiler support for ruby
 "map <F5> :!ruby %<CR>
 let ruby_fold=1
+autocmd FileType ruby normal zR
 
 " Omni Completion *************************************************************
 autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
