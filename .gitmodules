@@ -52,3 +52,6 @@
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = http://github.com/vim-scripts/nginx.vim.git
+[submodule "bundle/Gist"]
+	path = bundle/Gist
+	url = http://github.com/vim-scripts/Gist.vim.git
