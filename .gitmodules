@@ -55,3 +55,6 @@
 [submodule "bundle/Gist"]
 	path = bundle/Gist
 	url = http://github.com/vim-scripts/Gist.vim.git
+[submodule "bundle/TwitVim"]
+	path = bundle/TwitVim
+	url = https://github.com/vim-scripts/TwitVim.git
