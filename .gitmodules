@@ -58,3 +58,6 @@
 [submodule "bundle/TwitVim"]
 	path = bundle/TwitVim
 	url = https://github.com/vim-scripts/TwitVim.git
+[submodule "bundle/Markdown"]
+	path = bundle/Markdown
+	url = https://github.com/vim-scripts/Markdown.git
