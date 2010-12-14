@@ -61,3 +61,12 @@
 [submodule "bundle/Markdown"]
 	path = bundle/Markdown
 	url = https://github.com/vim-scripts/Markdown.git
+[submodule "vim-javascript"]
+	path = vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/js-indent"]
+	path = bundle/js-indent
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/js-syntax"]
+	path = bundle/js-syntax
+	url = https://github.com/vim-scripts/JavaScript-syntax.git
