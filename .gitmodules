@@ -76,3 +76,6 @@
 [submodule "bundle/asciidoc"]
 	path = bundle/asciidoc
 	url = git://github.com/framallo/asciidoc.vim.git
+[submodule "bundle/fugitive.vim"]
+	path = bundle/fugitive.vim
+	url = https://github.com/vim-scripts/fugitive.vim.git
