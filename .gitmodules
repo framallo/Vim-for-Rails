@@ -79,3 +79,6 @@
 [submodule "bundle/fugitive.vim"]
 	path = bundle/fugitive.vim
 	url = https://github.com/vim-scripts/fugitive.vim.git
+[submodule "bundle/taskwarrior.vim"]
+	path = bundle/taskwarrior.vim
+	url = git://github.com/framallo/taskwarrior.vim.git
