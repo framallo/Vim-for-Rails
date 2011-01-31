@@ -34,4 +34,4 @@ set gtl=%t gtt=%F
 " gedim plugin
 " 1440x900: MacBookPro 15"
 " 1280x800: MacBookPro 13"
-let g:screenDimensions = { '1920,1080': [ 304, 80 ], '1280,800': [ 207,60 ], 'default' :[50,50] }
+let g:screenDimensions = { '1920,1080': [ 145, 77 ], '1280,800': [ 207,60 ], 'default' :[50,50] }
