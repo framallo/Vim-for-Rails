@@ -169,13 +169,13 @@ set history=1000 " increase history size
 " Navigation ******************************************************************
 
 " Make cursor move by visual lines instead of file lines (when wrapping)
-map <up> gk
-map k gk
-imap <up> <C-o>gk
-map <down> gj
-map j gj
-imap <down> <C-o>gj
-map E ge
+"map <up> gk
+"map k gk
+"imap <up> <C-o>gk
+"map <down> gj
+"map j gj
+"imap <down> <C-o>gj
+"map E ge
 
 map <Leader>p <C-^> " Go to previous file
 
