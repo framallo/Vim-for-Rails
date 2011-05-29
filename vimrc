@@ -280,6 +280,8 @@ let g:vimwiki_fold_lists=1
 " nginx conf *********************************************************************
 au BufRead,BufNewFile nginx.conf* set ft=nginx
 
+" asciidoc conf ******************************************************************
+au BufNewFile,BufRead *.txt,README,TODO,CHANGELOG,NOTES,*.asciidoc  setfiletype asciidoc
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
