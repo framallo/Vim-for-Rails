@@ -283,6 +283,18 @@ au BufRead,BufNewFile nginx.conf* set ft=nginx
 " asciidoc conf ******************************************************************
 au BufNewFile,BufRead *.txt,README,TODO,CHANGELOG,NOTES,*.asciidoc  setfiletype asciidoc
 
+" json conf ******************************************************************
+"
+au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax 
+" external tool from http://lloyd.github.com/yajl/.
+autocmd FileType json set equalprg=json_reformat
+" external tool from http://github.com/dangerousben/jsonval.
+autocmd FileType json set makeprg=jsonval\ %
+autocmd FileType json set errorformat=%E%f:\ %m\ at\ line\ %l,%-G%.%#
+
+
+
+
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |
 " |                      (GUI stuff goes in gvimrc)                           |

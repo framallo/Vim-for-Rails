@@ -88,3 +88,6 @@
 [submodule "bundle/mustache"]
 	path = bundle/mustache
 	url = https://github.com/KTamas/mustache.vim.git
+[submodule "bundle/JSON.vim"]
+	path = bundle/JSON.vim
+	url = https://github.com/vim-scripts/JSON.vim.git
