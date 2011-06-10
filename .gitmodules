@@ -97,3 +97,6 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/git-grep-vim"]
+	path = bundle/git-grep-vim
+	url = https://github.com/tjennings/git-grep-vim.git
