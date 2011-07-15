@@ -100,3 +100,6 @@
 [submodule "bundle/git-grep-vim"]
 	path = bundle/git-grep-vim
 	url = https://github.com/tjennings/git-grep-vim.git
+[submodule "bundle/html.vim"]
+	path = bundle/html.vim
+	url = https://github.com/vim-scripts/HTML.zip.git
