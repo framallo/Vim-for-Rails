@@ -96,7 +96,6 @@ set smartcase " Ignore case when searching lowercase
 "set t_Co=256 " 256 colors
 set background=dark 
 syntax on " syntax highlighting
-colorscheme ir_black
 
 
 " Status Line *****************************************************************
@@ -331,9 +330,7 @@ let g:no_html_toolbar = 'yes'
 syntax on
 
 if has("gui_macvim")
-  colorscheme ir_black
 elseif has("gui_gtk2")
-  colorscheme ir_black
 elseif has("x11")
 elseif has("gui_win32")
 else
