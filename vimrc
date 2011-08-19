@@ -292,6 +292,9 @@ au! BufRead,BufNewFile *.json set equalprg=json_reformat
 au! BufRead,BufNewFile *.json set makeprg=jsonval\ %
 au! BufRead,BufNewFile *.json set errorformat=%E%f:\ %m\ at\ line\ %l,%-G%.%#
 
+" html ***********************************************************************
+let g:no_html_toolbar = 'yes'
+
 
 
 
