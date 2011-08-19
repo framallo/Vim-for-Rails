@@ -93,8 +93,6 @@ set smartcase " Ignore case when searching lowercase
 
 
 " Colors **********************************************************************
-"set t_Co=256 " 256 colors
-set background=dark 
 syntax on " syntax highlighting
 
 
@@ -102,7 +100,6 @@ syntax on " syntax highlighting
 set showcmd
 set ruler " Show ruler
 "set ch=2 " Make command line two lines high
-match LongLineWarning '\%120v.*' " Error format when a line is longer than 120
 
 " filename completition *******************************************************
 " works as bash completition

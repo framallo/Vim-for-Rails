@@ -106,3 +106,6 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = https://github.com/vim-scripts/closetag.vim.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
