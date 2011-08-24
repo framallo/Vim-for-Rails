@@ -87,7 +87,7 @@
 	url = https://github.com/vim-scripts/Conque-Shell.git
 [submodule "bundle/mustache"]
 	path = bundle/mustache
-	url = https://github.com/KTamas/mustache.vim.git
+	url = https://github.com/juvenn/mustache.vim.git
 [submodule "bundle/JSON.vim"]
 	path = bundle/JSON.vim
 	url = https://github.com/vim-scripts/JSON.vim.git
