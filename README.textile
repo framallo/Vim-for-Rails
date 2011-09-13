@@ -18,10 +18,10 @@ then add the config files:
 
 git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
+echo 'source ~/.vim/vim-for-rails.vim' >> ~/.vimrc
+echo 'source ~/.vim/gvim-for-rails.vim' >> ~/.gvimrc
 
-user settings can go in ~/.vimrc.local 
+also user settings can go in ~/.vimrc.local 
 
 
 h1. USAGE

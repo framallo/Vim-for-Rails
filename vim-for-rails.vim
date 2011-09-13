@@ -7,9 +7,11 @@
 " |   ,n = toggle NERDTree off and on                                         |
 " |   ,N = find current file in  NERDTree                                     |
 " |                                                                           |
-" |   ,f = fuzzy find all files                                               |
-" |   ,F = Fuzzy find flush (refresh when new files are created)              |
-" |   ,b = fuzzy find in all buffers                                          |
+" |   ,fc = fuzzy find coverage files                                         |
+" |   ,ff = fuzzy find files                                                  |
+" |   ,fd = fuzzy find directory                                              |
+" |   ,fl = fuzzy find in lines                                               |
+" |   ,fb = fuzzy find buffers                                                |
 " |   ,p = go to previous file                                                |
 " |   ,t = toogle taglist                                                     |
 " |                                                                           |
@@ -223,21 +225,13 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 "let g:snip_set_textmate_cp = '1'  " Tab to expand snippets, not automatically.
 
 
-" CommandT ********************************************************
-  " To compile:
-  " cd ~/cl/etc/vim/ruby/command-t
-  " ruby extconf.rb
-  " make
-let g:CommandTMatchWindowAtTop = 1
-map <Leader>f :CommandT<CR>
-map <Leader>F :CommandTFlush<CR>
-
-
 " fuzzyfinder ********************************************************
-" I'm using CommandT for main searching, but it doesn't do buffers, so I'm
-" using FuzzyFinder for that
-map <Leader>b :FufBuffer<CR>
-"let g:fuzzy_ignore = '.o;.obj;.bak;.exe;.pyc;.pyo;.DS_Store;.db'
+map <Leader>fb :FufBuffer<CR>
+let g:fuzzy_ignore = '.o;.obj;.bak;.exe;.pyc;.pyo;.DS_Store;.db'
+map <Leader>fc :FufCoverageFile<CR>
+map <Leader>ff :FufFile<CR>
+map <Leader>fd :FufDir<CR>
+map <Leader>fl :FufLine<CR>
 
 
 " autocomplpop ***************************************************************
