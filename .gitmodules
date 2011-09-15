@@ -79,9 +79,6 @@
 [submodule "bundle/taskwarrior.vim"]
 	path = bundle/taskwarrior.vim
 	url = git://github.com/framallo/taskwarrior.vim.git
-[submodule "bundle/conque-shell"]
-	path = bundle/conque-shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
 [submodule "bundle/mustache"]
 	path = bundle/mustache
 	url = https://github.com/KTamas/mustache.vim.git
