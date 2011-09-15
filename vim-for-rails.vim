@@ -7,11 +7,12 @@
 " |   ,n = toggle NERDTree off and on                                         |
 " |   ,N = find current file in  NERDTree                                     |
 " |                                                                           |
-" |   ,fc = fuzzy find coverage files                                         |
+" |   ,fc = fuzzy find coverage files (or ,F)                                 |
 " |   ,ff = fuzzy find files                                                  |
 " |   ,fd = fuzzy find directory                                              |
 " |   ,fl = fuzzy find in lines                                               |
 " |   ,fb = fuzzy find buffers                                                |
+" |   ,fr = fuzzy find refresh files                                          |
 " |   ,p = go to previous file                                                |
 " |   ,t = toogle taglist                                                     |
 " |                                                                           |
@@ -232,6 +233,8 @@ map <Leader>fc :FufCoverageFile<CR>
 map <Leader>ff :FufFile<CR>
 map <Leader>fd :FufDir<CR>
 map <Leader>fl :FufLine<CR>
+map <Leader>fr :FufRenewCache<CR>
+map <Leader>F :FufCoverageFile<CR>
 
 
 " autocomplpop ***************************************************************

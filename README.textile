@@ -29,7 +29,6 @@ h1. USAGE
 jj = <esc>  Very useful for keeping your hands on the home row          
 ,n = toggle NERDTree off and on                                         
 ,f = fuzzy find all files                                               
-,F = Fuzzy find flush (refresh when new files are created)
 ,b = fuzzy find in all buffers                                          
 ,p = go to previous file                                                
 ,t = toogle taglist                                                     
