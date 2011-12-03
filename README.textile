@@ -18,13 +18,13 @@ then add the config files:
 
 git clone git://github.com/framallo/Vim-for-Rails.git ~/.vim
 
-  echo source ~/.vim/vim-for-rails.vim >> ~/.vimrc
-  echo source ~/.vim/gvim-for-rails.vim >> ~/.gvimrc
+echo source ~/.vim/vim-for-rails.vim >> ~/.vimrc
+echo source ~/.vim/gvim-for-rails.vim >> ~/.gvimrc
 
 then you need to install all required plugins by running:
 
-  git submodule init
-  git submodule update
+git submodule init
+git submodule update
 
 also user settings can go in ~/.vimrc.local 
 
