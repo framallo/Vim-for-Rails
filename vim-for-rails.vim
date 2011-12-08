@@ -7,12 +7,12 @@
 " |   ,n = toggle NERDTree off and on                                         |
 " |   ,N = find current file in  NERDTree                                     |
 " |                                                                           |
-" |   ,fc = fuzzy find coverage files (or ,F)                                 |
-" |   ,ff = fuzzy find files                                                  |
-" |   ,fd = fuzzy find directory                                              |
-" |   ,fl = fuzzy find in lines                                               |
-" |   ,fb = fuzzy find buffers                                                |
-" |   ,fr = fuzzy find refresh files                                          |
+" |   ,FC = fuzzy find coverage files (or ,F)                                 |
+" |   ,FF = fuzzy find files                                                  |
+" |   ,FD = fuzzy find directory                                              |
+" |   ,FL = fuzzy find in lines                                               |
+" |   ,FB = fuzzy find buffers                                                |
+" |   ,FR = fuzzy find refresh files                                          |
 " |   ,p = go to previous file                                                |
 " |   ,t = toogle taglist                                                     |
 " |                                                                           |
@@ -227,14 +227,15 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 
 
 " fuzzyfinder ********************************************************
-map <Leader>fb :FufBuffer<CR>
+map <Leader>FB :FufBuffer<CR>
 let g:fuzzy_ignore = '.o;.obj;.bak;.exe;.pyc;.pyo;.DS_Store;.db'
-map <Leader>fc :FufCoverageFile<CR>
-map <Leader>ff :FufFile<CR>
-map <Leader>fd :FufDir<CR>
-map <Leader>fl :FufLine<CR>
-map <Leader>fr :FufRenewCache<CR>
+map <Leader>FC :FufCoverageFile<CR>
 map <Leader>F :FufCoverageFile<CR>
+map <Leader>FF :FufFile<CR>
+map <Leader>FD :FufDir<CR>
+map <Leader>FL :FufLine<CR>
+map <Leader>FR :FufRenewCache<CR>
+map <Leader>f :FufCoverageFile<CR>
 
 
 " autocomplpop ***************************************************************
