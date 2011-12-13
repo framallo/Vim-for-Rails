@@ -37,26 +37,38 @@ Then you need to load on ~/.gvimrc. e.g.:
 
 
 # USAGE
+" -----------------------------------------------------------------------------  
+" |                            VIM Settings                                   |
+" |                   (see gvimrc for gui vim settings)                       |
+" |                                                                           |
+" | Some highlights:                                                          |
+" |   jj = <esc>  Very useful for keeping your hands on the home row          |
+" |   ,n = toggle NERDTree off and on                                         |
+" |   ,N = find current file in  NERDTree                                     |
+" |                                                                           |
+" |   ,FC = fuzzy find coverage files (or ,f)                                 |
+" |   ,FF = fuzzy find files                                                  |
+" |   ,FD = fuzzy find directory                                              |
+" |   ,FL = fuzzy find in lines                                               |
+" |   ,FB = fuzzy find buffers                                                |
+" |   ,FR = fuzzy find refresh files                                          |
+" |   ,p = go to previous file                                                |
+" |   ,t = toogle taglist                                                     |
+" |                                                                           |
+" |   ,h = new horizontal window                                              |
+" |   ,v = new vertical window                                                |
+" |                                                                           |
+" |   ,i = toggle invisibles                                                  |
+" |                                                                           |
+" |   enter and shift-enter = adds a new line after/before the current line   |
+" |                                                                           |
+" |   :call Tabstyle_tabs = set tab to real tabs                              |
+" |   :call Tabstyle_spaces = set tab to 2 spaces                             |
+" |                                                                           |
+" | Put machine/user specific settings in ~/.vimrc.local                      |
+" -----------------------------------------------------------------------------  
 
-    jj = <esc>  Very useful for keeping your hands on the home row          
-    ,n = toggle NERDTree off and on                                         
-    ,f = fuzzy find all files                                               
-    ,b = fuzzy find in all buffers                                          
-    ,p = go to previous file                                                
-    ,t = toogle taglist                                                     
-                                                                            
-    hh = inserts '=>'                                                       
-    aa = inserts '@'                                                        
-                                                                            
-    ,h = new horizontal window                                              
-    ,v = new vertical window                                                
-                                                                            
-    ,i = toggle invisibles                                                  
-                                                                            
-    enter and shift-enter = adds a new line after/before the current line   
-                                                                            
-    :call Tabstyle_tabs = set tab to real tabs                              
-    :call Tabstyle_spaces = set tab to 2 spaces                             
+
 
 # Keyboard Layout
 

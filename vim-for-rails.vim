@@ -7,7 +7,7 @@
 " |   ,n = toggle NERDTree off and on                                         |
 " |   ,N = find current file in  NERDTree                                     |
 " |                                                                           |
-" |   ,FC = fuzzy find coverage files (or ,F)                                 |
+" |   ,FC = fuzzy find coverage files (or ,f)                                 |
 " |   ,FF = fuzzy find files                                                  |
 " |   ,FD = fuzzy find directory                                              |
 " |   ,FL = fuzzy find in lines                                               |
@@ -28,6 +28,7 @@
 " |                                                                           |
 " | Put machine/user specific settings in ~/.vimrc.local                      |
 " -----------------------------------------------------------------------------  
+
 
 
 set nocompatible
