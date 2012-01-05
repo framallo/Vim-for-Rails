@@ -30,7 +30,6 @@
 " -----------------------------------------------------------------------------  
 
 
-
 set nocompatible
 let mapleader = ","
 imap jj <Esc> " Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees
