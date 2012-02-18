@@ -263,6 +263,12 @@ map <Leader>ggb :Gblame<CR>
 map <Leader>gga :Gwrite<CR>
 map <Leader>ggd :Gdiff<CR>
 
+func GitGrepWord()
+  normal! "zyiw
+  call GitGrep(getreg('z'))
+endf
+nmap <C-x>G :call GitGrepWord()<CR>
+
 " vimwiki ************************************************************************
 let g:vimwiki_browsers=['open ']
 function! VimwikiWeblinkHandler(weblink)
