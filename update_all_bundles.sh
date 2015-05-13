@@ -4,7 +4,7 @@ for file in bundle/*; do
       echo ''
       echo $file; 
       cd $file
-      git pull
+      git pull origin master
       cd $current_dir
    fi
 done
